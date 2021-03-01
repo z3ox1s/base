@@ -13,8 +13,14 @@
 <br><br>
 
 ## ⚙️ Run
-   - `cd base`
-   - `python3 base.py [OPTIONS]`
+   - Linux
+      - `cd base`
+      - `mv base.py base`
+      - `./base [OPTIONS]`
+   
+   - Windows
+      - `cd base`
+      - `python3 base.py [OPTIONS]`
 
 <br><br>
 
