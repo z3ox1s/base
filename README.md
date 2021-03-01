@@ -1,3 +1,5 @@
+<img src = "./screenshot1.png" width = 600>
+
 ## 🤔 What is base?
 - A script to encode and decode base (b16, b32, b64 and b85).
 
