@@ -16,19 +16,16 @@ parser.add_argument('-d', '--decode')
 args = parser.parse_args()
 
 def banner():
-    print(f'''\n{Fore.RED}
-         ▄▄▄▄    ▄▄▄        ██████ ▓█████ 
-        ▓█████▄ ▒████▄    ▒██    ▒ ▓█   ▀ 
-        ▒██▒ ▄██▒██  ▀█▄  ░ ▓██▄   ▒███   
-        ▒██░█▀  ░██▄▄▄▄██   ▒   ██▒▒▓█  ▄ 
-        ░▓█  ▀█▓ ▓█   ▓██▒▒██████▒▒░▒████▒
-        ░▒▓███▀▒ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░░░ ▒░ ░
-        ▒░▒   ░   ▒   ▒▒ ░░ ░▒  ░ ░ ░ ░  ░
-        ░    ░   ░   ▒   ░  ░  ░     ░   
-        ░            ░  ░      ░     ░  ░
-            ░
-                    {Fore.BLUE}by z3ox1s
-                      v0.0.1{Fore.WHITE}\n''')
+    return f'''\n{Fore.RED}             _                    
+            | |                   
+            | |__   __ _ ___  ___ 
+            | '_ \ / _` / __|/ _ /
+            | |_) | (_| \__ \  __/
+            |_.__/ \__,_|___/\___|
+            
+
+                  {Fore.BLUE}by z3ox1s
+                    v0.0.1{Fore.WHITE}\n'''
 
 def encode16(string):
     encodedBytes = b16encode(string.encode('ascii'))
@@ -70,7 +67,7 @@ def decode85(string):
     decodedString = decodedBytes.decode('ascii')
     print(f'{Fore.BLUE}Method: {Fore.WHITE}\n   Base85 Decode\n\n{Fore.BLUE}Result:\n   {Fore.WHITE}{decodedString}\n')
 
-banner()
+print(banner())
 
 try:
     if args.help == True:
