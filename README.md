@@ -15,7 +15,7 @@
 ## ⚙️ Run
    - Linux
       - `cd base`
-      - `mv base.py base`
+      - `./setup.sh`
       - `./base [OPTIONS]`
    
    - Windows
